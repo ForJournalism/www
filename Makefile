@@ -1,5 +1,8 @@
 all: html-index
 
+run:
+	@python -m SimpleHTTPServer
+
 html-index:
 	@cd partials; \
 		cat head_start.html head_end.html body_start.html body_end.html > ../index.html 
